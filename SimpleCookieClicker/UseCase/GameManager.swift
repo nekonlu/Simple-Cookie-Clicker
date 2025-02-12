@@ -49,7 +49,7 @@ public final class GameManager {
         self.cookies = self.cookies.minusCookie(item.nextLevelFee)
         self.production = self.production.addCookie(item.baseProduction)
         
-        items.map { item in
+        let _ = items.map { item in
             if item.id == itemId {
                 return item.levelUp()
             }
